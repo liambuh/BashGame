@@ -1,3 +1,16 @@
+PLAYER_X=10
+PLAYER_Y=10
+PLAYER_DIR="up"
+SWORD_DIR="up"
+
+SX=0
+SY=0
+SCHAR=""
+
+TSX=0
+TSY=0
+TSD=""
+
 # getswordpos px py pd
 # ret: TSX TSY TSD
 getswordpos() {

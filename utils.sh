@@ -1,3 +1,5 @@
+MODRES=0
+
 # modval val base
 # ret: MODRES
 modval() {

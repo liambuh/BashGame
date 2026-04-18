@@ -1,4 +1,4 @@
-#!/bin/bash
+EXIT_FLAG=0
 
 # game
 # ret: N/A

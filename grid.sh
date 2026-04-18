@@ -1,3 +1,8 @@
+GRID=("" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "")
+GRID_W=20
+GRID_H=20
+GRIDCHAR=' '
+
 # getchar x y
 # ret: GRIDCHAR
 getchar() {

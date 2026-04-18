@@ -1,3 +1,6 @@
+FOUNDBLOCK=0
+FOUNDHIT=0
+
 # collision x y
 # ret: FOUNDBLOCK, FOUNDHIT
 collision() {
