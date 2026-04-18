@@ -179,7 +179,7 @@ draw() {
 # collision x y
 # ret: FOUNDBLOCK, FOUNDHIT
 collision() {
-	FOUDBLOCK=0
+	FOUNDBLOCK=0
 	FOUNDHIT=0
 	getchar $1 $2
 	if [ $GRIDCHAR = '#' ]; then
@@ -235,7 +235,7 @@ getswordpos() {
 updateswordpos() {
 	SX=$1
 	SY=$2
-	SCHAR=$sc
+	SCHAR=$3
 }
 
 # modval val base
