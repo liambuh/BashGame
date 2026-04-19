@@ -12,8 +12,8 @@ collision() {
 
     getchar "$1" "$2"
 
-    lgc=${{GRIDCHAR,,}}
-    ugc=${{GRIDCHAR^^}}
+    lgc=${GRIDCHAR,,}
+    ugc=${GRIDCHAR^^}
 
     if [ "$GRIDCHAR" = "#" ]; then
         FOUNDBLOCK=1

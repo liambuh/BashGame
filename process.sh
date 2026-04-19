@@ -49,7 +49,7 @@ process() {
 	if [ $FOUNDBLOCK = 1 ]; then
 		pvalid=0
 	fi
-	if [ $FOUNDITEM = 1]; then
+	if [ $FOUNDITEM = 1 ]; then
         pickup=1
     fi
     pposchar=$GRIDCHAR
