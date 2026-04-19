@@ -21,7 +21,7 @@ collision() {
         FOUNDPLAYER=1
     elif [ "$GRIDCHAR" = "." ]; then
         FOUNDEMPTY=1
-    elif [ "$GRIDCHAR" = "$lgc" ]; then
+    elif [ "$GRIDCHAR" = "j" ]; then
         FOUNDITEM=1
     fi
 }
