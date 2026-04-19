@@ -40,20 +40,28 @@ process() {
 	pvalid=$((1))
 	svalid=$((1))
 	valid=$((1))
-	
+	pickup=$((0))
+    pposchar='.'
+    sposchar='.'
+
 	# player collision
 	collision $px $py
 	if [ $FOUNDBLOCK = 1 ]; then
 		pvalid=0
 	fi
-	
+	if [ $FOUNDITEM = 1]; then
+        pickup=1
+    fi
+    pposchar=$GRIDCHAR
+
 	# sword collision
 	getswordpos $px $py $pd
 	collision $TSX $TSY
 	if [ $FOUNDBLOCK = 1 ]; then
 		svalid=0
 	fi
-	
+	sposchar=$GRIDCHAR
+
 	# combine valids
 	if [ $pvalid = 0 ]; then
 		valid=0
@@ -73,5 +81,11 @@ process() {
 		PLAYER_Y=$start_py
 		PLAYER_DIR=$start_pd
 	fi
+
+    # process pickup logic
+    if [ $pickup = 1]; then
+        handlepickup $pposchar
+    fi
 	
+    # process sword logic
 }

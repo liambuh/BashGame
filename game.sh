@@ -12,10 +12,7 @@ game() {
 		draw
 
 		getchar $PLAYER_X $PLAYER_Y
-		echo $GRIDCHAR
-		echo [ $PLAYER_X , $PLAYER_Y ] $PLAYER_DIR
-		echo [ $SX , $SY ] $SWORD_DIR
-		echo p = $pvalid s = $svalid v = $valid
+		
 		read -rsn1 input
 
 		process $input
@@ -45,6 +42,7 @@ init() {
 	done
 	
 	setchar 2 2 '#'
+	setchar 4 4 'j'
 }
 
 # draw
